@@ -1,6 +1,15 @@
 * {
   font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+.logo {
+  width: 60px;
 }
 
 body {
@@ -18,136 +27,151 @@ body {
   align-items: center;
   height: 100%;
 }
+
 .header-link {
   padding: 35px;
 }
+
 .header-link:hover {
   color: #0065fc;
-  border-top: 1px solid #0065fc;
-}
-
-.logo {
-  width: 60px;
-  margin: 35px;
-}
-
-a {
-  text-decoration: none;
+  border-top: 2px solid #0065fc;
 }
 
 .header-nav {
   display: flex;
   justify-content: space-around;
-  text-decoration: none;
   height: 100%;
 }
 
-.section-form {
-  padding: 0 55px 40px;
-}
-
-h2 {
-  font-weight: 700;
-}
-
-p {
-  font-weight: 400;
+.title-form {
+  text-align: initial;
 }
 
 .formulaire {
   display: flex;
-  border: 20 px solid;
-  padding: 15px 20px 20px 20px;
+  padding: 5px 5px 5px 0px;
 }
-.formulaire i {
+
+.form-flex {
+  display: flex;
+  height: 48px;
+}
+
+.formulaire .fa-location-dot {
   background: #f2f2f2;
-  padding: 20px;
+  padding: 15px;
   border: 1px solid #f2f2f2;
   border-radius: 15px 0px 0px 15px;
 }
 
+.fa-info:before {
+  font-size: 15px;
+}
+
+.formulaire .fa-magnifying-glass {
+  display: none;
+}
+
 input {
-  height: 58px;
-  width: 330px;
+  width: 225px;
   border: 1px solid #f2f2f2;
 }
 
 ::placeholder {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
+  color: black;
+  font-weight: bold;
   font-size: 18px;
-  line-height: 21px;
   text-align: center;
 }
 
 .recherche {
   color: white;
-  font-weight: 700;
-  font-size: 18px;
-  padding: 15px 16px 15px 16px;
   background: #0065fc;
   border: 1px solid #0065fc;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15px;
   border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
 }
 
-/***************************************/
+/******************************************/
 
 .filtre {
   display: flex;
   align-items: center;
 }
 
+.filtre-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: center;
+  column-gap: 10px;
+  width: 90%;
+}
+
 .filtre-div {
-  margin: 30px;
-  padding: 20px;
   border: 2px solid #d9d9d9;
   border-radius: 50px;
+  padding: 15px;
+  cursor: pointer;
 }
+
 .filtre-div:hover {
   background-color: #deebff;
 }
+.filtre h3 {
+  margin: 10px;
+}
 
-.filtre i {
+.filtre-grid i {
   color: #0065fc;
+  padding-right: 10px;
+  font-size: 22px;
 }
 
 .filtre-button {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 17px;
-  border: #d9d9d9;
-  background: white;
+  border: none;
+  background: none;
+}
+
+/******************************************/
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.information i {
+  text-align: center;
+  color: #0065fc;
+  border: 1px solid #f2f2f2;
+  border-radius: 100%;
+  line-height: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .information p {
   padding: 10px;
 }
 
-/***********************/
-
-.information {
-  display: flex;
-  align-items: center;
-}
-.information i {
-  color: #0065fc;
-  padding: 15px;
-  border: 2px solid #d9d9d9;
-  border-radius: 50%;
-}
-
-/************************/
+/******************************************/
 
 .main {
   display: flex;
 }
 
 .Hébergement {
-  margin: 0 25px;
-  padding: 20px;
   background-color: #f2f2f2;
+  margin-right: 40px;
+  padding: 20px;
   border-radius: 20px;
+  width: 70%;
 }
 
 .card-flex {
@@ -155,120 +179,510 @@ input {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
 }
-.star {
+
+.fa-star {
   color: #0065fc;
 }
-span i {
+
+.title-card {
+  padding: 30px;
+}
+
+.fa-star-none {
   color: #f2f2f2;
 }
 
 .card {
   background: #ffffff;
-  margin: 15px;
-  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  margin: 10px;
   width: 30%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5%;
 }
 
 .card img {
-  height: 150px;
+  height: 100px;
   border: 5px solid #ffffff;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  width: 100%;
+  width: 96%;
 }
 
-.card h3 {
-  margin: 0;
-  font-weight: 700;
-}
 .container {
-  padding: 5px;
-}
-.container p {
-  margin: 5px;
+  padding: 0 15px 10px;
 }
 
-h5 {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
+.title-container {
+  font-size: 16px;
+  margin: 0;
 }
 
-/****************/
+/******************************************/
+
 .titre-aside {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+
 .titre-aside i {
   color: #0065fc;
+}
+
+.main {
+  width: 100%;
 }
 
 .aside {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 15px;
+  padding: 30px;
   border-radius: 25px;
+  width: 30%;
+}
+.card-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .card-aside {
   display: flex;
   background: #ffffff;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5%;
-  width: 100%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  padding: 0.3em;
+  height: 10em;
 }
 
 .card-aside img {
-  width: 140px;
-  border: 5px solid #ffffff;
-  border-radius: 20px 0px 0px 20px;
   object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+  width: 8em;
 }
 
-/***********************/
+.container-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 0 0.3em 1em;
+}
+
+.container-aside h3 {
+  margin: 0;
+}
+
+/******************************************/
 
 .flex-marseille {
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .card-marseille {
-  background: #ffffff;
   margin: 15px;
-  padding: 10px;
-  width: 30%;
   border-radius: 5%;
+  width: 30%;
 }
 
 .card-marseille img {
-  height: 450px;
+  object-fit: cover;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
+  height: 450px;
   width: 100%;
 }
 
 .container-marseille {
-  padding: 0%;
+  padding: 1px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
+  height: 70px;
 }
-/*******************/
+
+span h2 {
+  margin: 60px 15px 20px;
+}
+
+.container-marseille h3 {
+  margin-left: 10px;
+}
+
+/******************************************/
+
 footer {
   display: flex;
   justify-content: space-around;
   background: #f2f2f2;
 }
+
 footer ul {
+  padding-left: 0;
   list-style-type: none;
 }
+
 footer li {
   padding: 10px;
+}
+/******************************************/
+/******************************************/
+
+@media screen and (max-width: 992px) {
+  body {
+    margin: 0 20px;
+  }
+
+  .header-link:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+  }
+
+  .section-form {
+    padding: 0;
+  }
+
+  .filtre {
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  .filtre-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .Hébergement {
+    width: auto;
+    margin: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 15px 10px;
+  }
+
+  /******************************************/
+
+  .aside {
+    flex-direction: column;
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .card-aside {
+    flex: 1;
+  }
+  .card-aside img {
+    width: 40%;
+  }
+  .container-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0px 5px 10px;
+    width: 60%;
+  }
+  .aside-description h3 {
+    font-size: 16px;
+  }
+  .aside-description p {
+    font-size: 14px;
+  }
+
+  .card img {
+    object-fit: cover;
+    height: 150px;
+    border: 5px solid #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    width: 95%;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+  }
+
+  .flex-marseille {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .card-marseille {
+    width: 50%;
+    border-radius: 5%;
+  }
+
+  .card-marseille img {
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 70%;
+  }
+
+  .container-marseille {
+    padding: 1px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 70px;
+  }
+}
+/******************************************/
+/******************************************/
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 60px;
+    margin-top: 20px;
+  }
+
+  body {
+    max-width: none;
+    margin: auto;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .header-bar {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-link {
+    width: 50%;
+    border-bottom: 2px solid #f2f2f2;
+    padding: 35px;
+  }
+
+  .header-link:hover {
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+  }
+
+  .section-form {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .title-form {
+    text-align: initial;
+  }
+
+  .recherche {
+    display: none;
+  }
+
+  .form-flex {
+    width: 80%;
+  }
+
+  .formulaire .fa-magnifying-glass {
+    display: block;
+  }
+
+  .formulaire .fa-magnifying-glass {
+    color: white;
+    background: #0065fc;
+
+    border-radius: 0px 15px 15px 0px;
+    padding: 20px 20px 15px 20px;
+  }
+
+  /******************************************/
+
+  .filtre {
+    display: block;
+    margin: 0;
+  }
+
+  .title-card {
+    margin-left: 20px;
+  }
+  .filtre-grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 45% 50%;
+    gap: 20px;
+  }
+  .filtre-grid i {
+    font-size: 15px;
+  }
+
+  .filtre-div {
+    padding: 15px;
+    border: 2px solid #d9d9d9;
+    border-radius: 50px;
+    margin: 0;
+    text-align: initial;
+  }
+  .filtre-button {
+    font-size: 11px;
+  }
+
+  .information {
+    margin: 0;
+  }
+
+  .information p {
+    padding: 0;
+    text-align: initial;
+  }
+  /******************************************/
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 25px;
+    border-radius: 0;
+    width: 90%;
+  }
+
+  .card-list {
+    display: block;
+  }
+
+  .card-aside {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .container-aside {
+    padding: 10px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  /******************************************/
+
+  .Hébergement {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    width: 90%;
+  }
+
+  .card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    margin-block: 25px;
+    width: 100%;
+  }
+
+  .card-flex {
+    display: block;
+    width: 100%;
+  }
+
+  .card img {
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    height: 150px;
+    width: 98%;
+  }
+
+  .card-aside img {
+    width: 8rem;
+    height: 150px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 15px 10px;
+  }
+
+  .title-card {
+    display: none;
+  }
+
+  /******************************************/
+
+  .flex-marseille {
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .card-marseille {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    margin-bottom: 25px;
+    width: 95%;
+  }
+
+  .card-marseille img {
+    object-fit: cover;
+    width: 95%;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 20px 20px 0px 0px;
+  }
+  .container-marseille {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 20px 20px;
+    height: auto;
+    padding: 0;
+    width: 95%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #f2f2f2;
+    margin-block: 80px;
+    padding: 45px 30px;
+    height: 45rem;
+  }
 }
