@@ -107,7 +107,7 @@ input {
   flex-wrap: wrap;
   margin: 20px;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 4rem;
   width: 90%;
 }
 
@@ -164,6 +164,7 @@ input {
 
 .main {
   display: flex;
+  width: 100%;
 }
 
 .Hébergement {
@@ -232,10 +233,6 @@ input {
   color: #0065fc;
 }
 
-.main {
-  width: 100%;
-}
-
 .aside {
   background-color: #f2f2f2;
   display: flex;
@@ -262,7 +259,7 @@ input {
 .card-aside img {
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
-  width: 8em;
+  width: 40%;
 }
 
 .container-aside {
@@ -270,10 +267,15 @@ input {
   flex-direction: column;
   justify-content: space-between;
   padding: 1em 0 0.3em 1em;
+  width: 60%;
 }
 
 .container-aside h3 {
+  font-size: 16px;
   margin: 0;
+}
+.container-aside p {
+  font-size: 14px;
 }
 
 /******************************************/
@@ -356,6 +358,7 @@ footer li {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
+    column-gap: 0;
     width: 100%;
     margin: 0px;
   }
@@ -630,7 +633,7 @@ footer li {
   }
 
   .card-aside img {
-    width: 8rem;
+    width: 40%;
     height: 150px;
   }
 
@@ -638,6 +641,7 @@ footer li {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    width: 60%;
     padding: 0 15px 10px;
   }
 
@@ -672,7 +676,7 @@ footer li {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     border-radius: 0px 0px 20px 20px;
     height: auto;
-    padding: 0;
+    padding: 1px;
     width: 95%;
   }
 
