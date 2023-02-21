@@ -167,7 +167,7 @@ input {
   width: 100%;
 }
 
-.Hébergement {
+#hébergement {
   background-color: #f2f2f2;
   margin-right: 40px;
   padding: 20px;
@@ -189,6 +189,7 @@ input {
 }
 
 .title-card {
+  font-weight: 900;
   padding: 30px;
 }
 
@@ -249,11 +250,15 @@ input {
 
 .card-aside {
   display: flex;
+}
+.flex-article {
+  display: flex;
   background: #ffffff;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   border-radius: 20px;
   padding: 0.3em;
   height: 10em;
+  width: 100%;
 }
 
 .card-aside img {
@@ -307,7 +312,7 @@ input {
   height: 70px;
 }
 
-span h2 {
+#activités {
   margin: 60px 15px 20px;
 }
 
@@ -334,7 +339,7 @@ footer li {
 /******************************************/
 /******************************************/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   body {
     margin: 0 20px;
   }
@@ -362,6 +367,9 @@ footer li {
     width: 100%;
     margin: 0px;
   }
+  .filtre-button {
+    font-size: 80%;
+  }
 
   .information {
     display: flex;
@@ -373,7 +381,7 @@ footer li {
     display: block;
   }
 
-  .Hébergement {
+  #hébergement {
     width: auto;
     margin: auto;
   }
@@ -457,7 +465,7 @@ footer li {
 /******************************************/
 /******************************************/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .logo {
     width: 60px;
     margin-top: 20px;
@@ -555,9 +563,6 @@ footer li {
     margin: 0;
     text-align: initial;
   }
-  .filtre-button {
-    font-size: 11px;
-  }
 
   .information {
     margin: 0;
@@ -604,7 +609,7 @@ footer li {
   }
   /******************************************/
 
-  .Hébergement {
+  #hébergement {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -635,6 +640,11 @@ footer li {
   .card-aside img {
     width: 40%;
     height: 150px;
+  }
+  article {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    margin-block: 25px;
   }
 
   .container {
