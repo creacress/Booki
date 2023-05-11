@@ -116,10 +116,15 @@ input {
   border-radius: 50px;
   padding: 15px;
   cursor: pointer;
-}
+  }
+ 
+
+
 
 .filtre-div:hover {
-  background-color: #deebff;
+  background-color: #deebff; 
+   transition: all .2s ease-in-out;
+  transform: scale(1.1);
 }
 .filtre h2 {
   margin: 10px;
@@ -205,6 +210,10 @@ input {
   margin: 10px;
   width: 30%;
 }
+.card:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
 
 .card img {
   height: 100px;
@@ -251,6 +260,10 @@ input {
 
 .card-aside {
   display: flex;
+}
+.card-aside:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
 }
 .flex-article {
   display: flex;
@@ -404,6 +417,10 @@ footer li {
 
   .card-aside {
     flex: 1;
+  }
+  .card-aside:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
   }
   .card-aside img {
     width: 40%;
@@ -592,6 +609,10 @@ footer li {
   .card-aside {
     margin-bottom: 20px;
   }
+  .card-aside:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+  }
 
   .container-aside {
     padding: 10px;
@@ -618,6 +639,10 @@ footer li {
     border-radius: 20px;
     margin-block: 25px;
     width: 100%;
+  }
+  .card:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
   }
 
   .card-flex {
