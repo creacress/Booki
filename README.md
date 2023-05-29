@@ -14,3 +14,13 @@ Sarah vous envoie un e-mail pour vous présenter l’avancée du projet.
 + un dossier “images” contenant l’ensemble des images utilisées sur le site.
 + [Maquette du site sur Figma](https://www.figma.com/file/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?node-id=3%3A0&t=YL7QVHueotIL04nL-1)
 + [Note de synthèse pour intégration du site Booki](https://course.oc-static.com/projects/Développeur+Web/IW_P3+HTML+CSS+Booki/IW+%3A+React+Booki+-+Note+de+synthese.pdf)
+
+### Compétences évoluées :
+
++ Intégrer du contenu conformément à une maquette avec HTML et CSS 🔥
++ Installer un environnement de développement front-end 🔥
++ Implémenter une interface responsive avec HTML et CSS 🔥
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexis-cresson/)
